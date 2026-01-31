@@ -1,5 +1,10 @@
 # 🛡️ Fin-Vision: The AI Fraud Sentinel
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://fin-vision-the-ai-fraud-sentinel-nvtatavrg8awsvctdfmvbv.streamlit.app)
+
 > *A Real-Time Computer Vision System for Financial Document Forensics*
+
+## 🔴 Live Demo
+**Try the App here:** [Fin-Vision Live Dashboard](https://fin-vision-the-ai-fraud-sentinel-nvtatavrg8awsvctdfmvbv.streamlit.app)
 
 ## 💡 The Problem
 Financial fraud costs the global economy billions annually. Traditional methods of verifying checks, ID cards, and financial documents rely on slow manual review or expensive proprietary hardware.
@@ -15,10 +20,10 @@ Financial fraud costs the global economy billions annually. Traditional methods 
 * **UI/Frontend:** Streamlit
 * **Math:** NumPy
 
-## ⚡ How to Run
+## ⚡ How to Run Locally
 1. Clone the repository
 2. Install dependencies:
-   `pip install streamlit opencv-python-headless numpy`
+   `pip install -r requirements.txt`
 3. Run the app:
    `python -m streamlit run main.py`
 
