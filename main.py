@@ -8,7 +8,7 @@ import time
 # 1. Page Configuration (Must be first)
 st.set_page_config(
     page_title="Fin-Vision",
-    page_icon="🛡️",
+    page_icon="🛡️", # here we using shortcut key ( windows + . ) to add emoji good looking ui
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -93,4 +93,5 @@ with c2:
             st.caption("Reason: Document lacks necessary security fibers or texture.")
             
     else:
+
         st.info("Waiting for input...")
