@@ -8,7 +8,7 @@ import time
 # 1. Page Configuration (Must be first)
 st.set_page_config(
     page_title="Fin-Vision",
-    page_icon="🛡️", # here we using shortcut key ( windows + . ) to add emoji good looking ui
+    page_icon="", # here we using shortcut key ( windows + . ) to add emoji good looking ui
     layout="wide",
     initial_sidebar_state="expanded"
 )
@@ -30,7 +30,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # 3. Header
-st.title("🛡️ Fin-Vision: The AI Fraud Sentinel")
+st.title(" Fin-Vision: The AI Fraud Sentinel")
 st.markdown("### Real-time Financial Document Forensics")
 st.markdown("---")
 
@@ -38,10 +38,10 @@ st.markdown("---")
 with st.sidebar:
     st.image("https://cdn-icons-png.flaticon.com/512/2092/2092663.png", width=100)
     st.header("Control Panel")
-    mode = st.radio("Select Input Mode:", ["📂 Upload Image", "📷 Live Camera"])
+    mode = st.radio("Select Input Mode:", ["Upload Image", "Live Camera"])
     
     st.markdown("---")
-    st.caption("System Status: 🟢 Online")
+    st.caption("System Status:  Online")
     st.caption("Version: v1.0.0 (Hackathon Build)")
 
 # 5. Main Logic
@@ -51,7 +51,7 @@ img = None
 
 with c1:
     st.subheader("1. Input Document")
-    if mode == "📂 Upload Image":
+    if mode == " Upload Image":
         f = st.file_uploader("Upload Check/ID", type=["jpg", "png", "jpeg"])
         if f is not None:
             img = Image.open(f)
@@ -86,12 +86,13 @@ with c2:
         
         # Final Verdict Display
         if "Authentic" in status:
-            st.success(f"✅ VERDICT: {status}")
+            st.success(f" VERDICT: {status}")
             st.balloons()
         else:
-            st.error(f"⚠️ VERDICT: {status}")
+            st.error(f" VERDICT: {status}")
             st.caption("Reason: Document lacks necessary security fibers or texture.")
             
     else:
 
         st.info("Waiting for input...")
+
